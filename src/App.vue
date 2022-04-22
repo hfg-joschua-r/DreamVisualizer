@@ -23,7 +23,7 @@
         />
         
 
-
+     
         <div class="button-container">
 Line-Weight:
         <slider v-model="line" max="40" color="#FB278D" track-color="#FEFEFE" tooltip="true"/>
@@ -70,42 +70,8 @@ Line-Weight:
               </svg>
               Draw
             </span>
-          </button>
-          
-
-          
+          </button>          
           <input type="color" v-model="color">
-          <select v-model="strokeType">
-            <option value="dash">
-              Dash
-            </option>
-            <option value="circle">
-              Circle
-            </option>
-            <option value="square">
-              Square
-            </option>
-            <option value="triangle">
-              Triangle
-            </option>
-            <option value="half_triangle">
-              Half Triangle
-            </option>
-          </select>
-          <button type="button" @click.prevent="fillShape = !fillShape">
-            <span v-if="fillShape">
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-square-fill" viewBox="0 0 16 16">
-                <path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2z"/>
-              </svg>
-              Fill
-            </span>
-            <span v-else>
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-square" viewBox="0 0 16 16">
-                <path d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"/>
-              </svg>
-              Stroke
-            </span>
-          </button>
         </div>
       </div>
       
@@ -120,11 +86,13 @@ Line-Weight:
 import VueDrawingCanvas from "vue-drawing-canvas";
 import slider from "vue3-slider";
 import axios from 'axios';
+
+
 export default {
   name: "App",
   components: {
     VueDrawingCanvas,
-    slider
+    slider,
   },
   data() {
     return {
