@@ -8,12 +8,16 @@
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
+    "@mdi/font": "5.9.55",
     "axios": "^0.26.1",
     "core-js": "^3.6.5",
+    "roboto-fontface": "*",
     "vue": "^3.0.0",
     "vue-drawing-canvas": "^1.0.10",
     "vue-easy-spinner": "^0.1.0",
-    "vue3-slider": "^1.6.9"
+    "vue3-slider": "^1.6.9",
+    "vuetify": "^3.0.0-beta.0",
+    "webfontloader": "^1.0.0"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.5.12",
@@ -22,7 +26,11 @@
     "@vue/compiler-sfc": "^3.0.0",
     "babel-eslint": "^10.1.0",
     "eslint": "^6.7.2",
-    "eslint-plugin-vue": "^7.0.0"
+    "eslint-plugin-vue": "^7.0.0",
+    "sass": "^1.38.0",
+    "sass-loader": "^10.0.0",
+    "vue-cli-plugin-vuetify": "~2.4.8",
+    "vuetify-loader": "^2.0.0-alpha.0"
   },
   "eslintConfig": {
     "root": true,
