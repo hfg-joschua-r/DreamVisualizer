@@ -1,0 +1,917 @@
+[
+  {
+    "Label": "unlabeled",
+    "ID": 182,
+    "Color": "#000000"
+  },
+  {
+    "Label": "person",
+    "ID": 0,
+    "Color": "#d60000"
+  },
+  {
+    "Label": "bicycle",
+    "ID": 1,
+    "Color": "#8c3bff"
+  },
+  {
+    "Label": "car",
+    "ID": 2,
+    "Color": "#018700"
+  },
+  {
+    "Label": "motorcycle",
+    "ID": 3,
+    "Color": "#00acc6"
+  },
+  {
+    "Label": "airplane",
+    "ID": 4,
+    "Color": "#97ff00"
+  },
+  {
+    "Label": "bus",
+    "ID": 5,
+    "Color": "#ff7ed1"
+  },
+  {
+    "Label": "train",
+    "ID": 6,
+    "Color": "#6b004f"
+  },
+  {
+    "Label": "truck",
+    "ID": 7,
+    "Color": "#ffa52f"
+  },
+  {
+    "Label": "boat",
+    "ID": 8,
+    "Color": "#00009c"
+  },
+  {
+    "Label": "traffic light",
+    "ID": 9,
+    "Color": "#857067"
+  },
+  {
+    "Label": "fire hydrant",
+    "ID": 10,
+    "Color": "#004942"
+  },
+  {
+    "Label": "street sign",
+    "ID": 11,
+    "Color": "#4f2a00"
+  },
+  {
+    "Label": "stop sign",
+    "ID": 12,
+    "Color": "#00fdcf"
+  },
+  {
+    "Label": "parking meter",
+    "ID": 13,
+    "Color": "#bcb6ff"
+  },
+  {
+    "Label": "bench",
+    "ID": 14,
+    "Color": "#95b379"
+  },
+  {
+    "Label": "bird",
+    "ID": 15,
+    "Color": "#bf03b8"
+  },
+  {
+    "Label": "cat",
+    "ID": 16,
+    "Color": "#2466a1"
+  },
+  {
+    "Label": "dog",
+    "ID": 17,
+    "Color": "#280041"
+  },
+  {
+    "Label": "horse",
+    "ID": 18,
+    "Color": "#dbb3af"
+  },
+  {
+    "Label": "sheep",
+    "ID": 19,
+    "Color": "#fdf490"
+  },
+  {
+    "Label": "cow",
+    "ID": 20,
+    "Color": "#4f445b"
+  },
+  {
+    "Label": "elephant",
+    "ID": 21,
+    "Color": "#a37c00"
+  },
+  {
+    "Label": "bear",
+    "ID": 22,
+    "Color": "#ff7066"
+  },
+  {
+    "Label": "zebra",
+    "ID": 23,
+    "Color": "#3f806e"
+  },
+  {
+    "Label": "giraffe",
+    "ID": 24,
+    "Color": "#82000c"
+  },
+  {
+    "Label": "hat",
+    "ID": 25,
+    "Color": "#a37bb3"
+  },
+  {
+    "Label": "backpack",
+    "ID": 26,
+    "Color": "#344d00"
+  },
+  {
+    "Label": "umbrella",
+    "ID": 27,
+    "Color": "#9ae4ff"
+  },
+  {
+    "Label": "shoe",
+    "ID": 28,
+    "Color": "#eb0077"
+  },
+  {
+    "Label": "eye glasses",
+    "ID": 29,
+    "Color": "#2d000a"
+  },
+  {
+    "Label": "handbag",
+    "ID": 30,
+    "Color": "#5d90ff"
+  },
+  {
+    "Label": "tie",
+    "ID": 31,
+    "Color": "#00c61f"
+  },
+  {
+    "Label": "suitcase",
+    "ID": 32,
+    "Color": "#5701aa"
+  },
+  {
+    "Label": "frisbee",
+    "ID": 33,
+    "Color": "#001d00"
+  },
+  {
+    "Label": "skis",
+    "ID": 34,
+    "Color": "#9a4600"
+  },
+  {
+    "Label": "snowboard",
+    "ID": 35,
+    "Color": "#959ea5"
+  },
+  {
+    "Label": "sports ball",
+    "ID": 36,
+    "Color": "#9a425b"
+  },
+  {
+    "Label": "kite",
+    "ID": 37,
+    "Color": "#001f31"
+  },
+  {
+    "Label": "baseball bat",
+    "ID": 38,
+    "Color": "#c8c300"
+  },
+  {
+    "Label": "baseball glove",
+    "ID": 39,
+    "Color": "#ffcfff"
+  },
+  {
+    "Label": "skateboard",
+    "ID": 40,
+    "Color": "#00bd9a"
+  },
+  {
+    "Label": "surfboard",
+    "ID": 41,
+    "Color": "#3615ff"
+  },
+  {
+    "Label": "tennis racket",
+    "ID": 42,
+    "Color": "#2d2424"
+  },
+  {
+    "Label": "bottle",
+    "ID": 43,
+    "Color": "#df57ff"
+  },
+  {
+    "Label": "plate",
+    "ID": 44,
+    "Color": "#bde6bf"
+  },
+  {
+    "Label": "wine glass",
+    "ID": 45,
+    "Color": "#7e4497"
+  },
+  {
+    "Label": "cup",
+    "ID": 46,
+    "Color": "#524f3b"
+  },
+  {
+    "Label": "fork",
+    "ID": 47,
+    "Color": "#d86600"
+  },
+  {
+    "Label": "knife",
+    "ID": 48,
+    "Color": "#647438"
+  },
+  {
+    "Label": "spoon",
+    "ID": 49,
+    "Color": "#c17287"
+  },
+  {
+    "Label": "bowl",
+    "ID": 50,
+    "Color": "#6e7489"
+  },
+  {
+    "Label": "banana",
+    "ID": 51,
+    "Color": "#809c03"
+  },
+  {
+    "Label": "apple",
+    "ID": 52,
+    "Color": "#bd8a64"
+  },
+  {
+    "Label": "sandwich",
+    "ID": 53,
+    "Color": "#623338"
+  },
+  {
+    "Label": "orange",
+    "ID": 54,
+    "Color": "#cacdda"
+  },
+  {
+    "Label": "broccoli",
+    "ID": 55,
+    "Color": "#6beb82"
+  },
+  {
+    "Label": "carrot",
+    "ID": 56,
+    "Color": "#213f69"
+  },
+  {
+    "Label": "hot dog",
+    "ID": 57,
+    "Color": "#a17eff"
+  },
+  {
+    "Label": "pizza",
+    "ID": 58,
+    "Color": "#fd03ca"
+  },
+  {
+    "Label": "donut",
+    "ID": 59,
+    "Color": "#75bcfd"
+  },
+  {
+    "Label": "cake",
+    "ID": 60,
+    "Color": "#d8c382"
+  },
+  {
+    "Label": "chair",
+    "ID": 61,
+    "Color": "#cda3cd"
+  },
+  {
+    "Label": "couch",
+    "ID": 62,
+    "Color": "#6d4f00"
+  },
+  {
+    "Label": "potted plant",
+    "ID": 63,
+    "Color": "#006974"
+  },
+  {
+    "Label": "bed",
+    "ID": 64,
+    "Color": "#469e5d"
+  },
+  {
+    "Label": "mirror",
+    "ID": 65,
+    "Color": "#93c6bf"
+  },
+  {
+    "Label": "dining table",
+    "ID": 66,
+    "Color": "#f9ff00"
+  },
+  {
+    "Label": "window",
+    "ID": 67,
+    "Color": "#bf5444"
+  },
+  {
+    "Label": "desk",
+    "ID": 68,
+    "Color": "#00643b"
+  },
+  {
+    "Label": "toilet",
+    "ID": 69,
+    "Color": "#5b4fa8"
+  },
+  {
+    "Label": "door",
+    "ID": 70,
+    "Color": "#521f64"
+  },
+  {
+    "Label": "tv",
+    "ID": 71,
+    "Color": "#4f5eff"
+  },
+  {
+    "Label": "laptop",
+    "ID": 72,
+    "Color": "#7e8e77"
+  },
+  {
+    "Label": "mouse",
+    "ID": 73,
+    "Color": "#b808f9"
+  },
+  {
+    "Label": "remote",
+    "ID": 74,
+    "Color": "#8a91c3"
+  },
+  {
+    "Label": "keyboard",
+    "ID": 75,
+    "Color": "#b30034"
+  },
+  {
+    "Label": "cell phone",
+    "ID": 76,
+    "Color": "#87607e"
+  },
+  {
+    "Label": "microwave",
+    "ID": 77,
+    "Color": "#9e0075"
+  },
+  {
+    "Label": "oven",
+    "ID": 78,
+    "Color": "#ffddc3"
+  },
+  {
+    "Label": "toaster",
+    "ID": 79,
+    "Color": "#500800"
+  },
+  {
+    "Label": "sink",
+    "ID": 80,
+    "Color": "#1a0800"
+  },
+  {
+    "Label": "refrigerator",
+    "ID": 81,
+    "Color": "#4b89b5"
+  },
+  {
+    "Label": "blender",
+    "ID": 82,
+    "Color": "#00dfdf"
+  },
+  {
+    "Label": "book",
+    "ID": 83,
+    "Color": "#c8fff9"
+  },
+  {
+    "Label": "clock",
+    "ID": 84,
+    "Color": "#2f3415"
+  },
+  {
+    "Label": "vase",
+    "ID": 85,
+    "Color": "#ff2646"
+  },
+  {
+    "Label": "scissors",
+    "ID": 86,
+    "Color": "#ff97aa"
+  },
+  {
+    "Label": "teddy bear",
+    "ID": 87,
+    "Color": "#03001a"
+  },
+  {
+    "Label": "hair drier",
+    "ID": 88,
+    "Color": "#c860b1"
+  },
+  {
+    "Label": "toothbrush",
+    "ID": 89,
+    "Color": "#c3a136"
+  },
+  {
+    "Label": "hair brush",
+    "ID": 90,
+    "Color": "#7c4f3a"
+  },
+  {
+    "Label": "banner",
+    "ID": 91,
+    "Color": "#f99e77"
+  },
+  {
+    "Label": "blanket",
+    "ID": 92,
+    "Color": "#566464"
+  },
+  {
+    "Label": "branch",
+    "ID": 93,
+    "Color": "#d193ff"
+  },
+  {
+    "Label": "bridge",
+    "ID": 94,
+    "Color": "#2d1f69"
+  },
+  {
+    "Label": "building-other",
+    "ID": 95,
+    "Color": "#411a34"
+  },
+  {
+    "Label": "bush",
+    "ID": 96,
+    "Color": "#af9397"
+  },
+  {
+    "Label": "cabinet",
+    "ID": 97,
+    "Color": "#629e99"
+  },
+  {
+    "Label": "cage",
+    "ID": 98,
+    "Color": "#bcdd7b"
+  },
+  {
+    "Label": "cardboard",
+    "ID": 99,
+    "Color": "#ff5d93"
+  },
+  {
+    "Label": "carpet",
+    "ID": 100,
+    "Color": "#0f2823"
+  },
+  {
+    "Label": "ceiling-other",
+    "ID": 101,
+    "Color": "#b8bdac"
+  },
+  {
+    "Label": "ceiling-tile",
+    "ID": 102,
+    "Color": "#743b64"
+  },
+  {
+    "Label": "cloth",
+    "ID": 103,
+    "Color": "#0f000c"
+  },
+  {
+    "Label": "clothes",
+    "ID": 104,
+    "Color": "#7e6ebc"
+  },
+  {
+    "Label": "clouds",
+    "ID": 105,
+    "Color": "#aaaaaa"
+  },
+  {
+    "Label": "counter",
+    "ID": 106,
+    "Color": "#ff4600"
+  },
+  {
+    "Label": "cupboard",
+    "ID": 107,
+    "Color": "#7e0087"
+  },
+  {
+    "Label": "curtain",
+    "ID": 108,
+    "Color": "#ffcd3d"
+  },
+  {
+    "Label": "desk-stuff",
+    "ID": 109,
+    "Color": "#2f3b42"
+  },
+  {
+    "Label": "dirt",
+    "ID": 110,
+    "Color": "#fda5ff"
+  },
+  {
+    "Label": "door-stuff",
+    "ID": 111,
+    "Color": "#89013d"
+  },
+  {
+    "Label": "fence",
+    "ID": 112,
+    "Color": "#752b01"
+  },
+  {
+    "Label": "floor-marble",
+    "ID": 113,
+    "Color": "#0a8995"
+  },
+  {
+    "Label": "floor-other",
+    "ID": 114,
+    "Color": "#050052"
+  },
+  {
+    "Label": "floor-stone",
+    "ID": 115,
+    "Color": "#8ed631"
+  },
+  {
+    "Label": "floor-tile",
+    "ID": 116,
+    "Color": "#52c372"
+  },
+  {
+    "Label": "floor-wood",
+    "ID": 117,
+    "Color": "#465970"
+  },
+  {
+    "Label": "flower",
+    "ID": 118,
+    "Color": "#570121"
+  },
+  {
+    "Label": "fog",
+    "ID": 119,
+    "Color": "#a52101"
+  },
+  {
+    "Label": "food-other",
+    "ID": 120,
+    "Color": "#90934b"
+  },
+  {
+    "Label": "fruit",
+    "ID": 121,
+    "Color": "#00421d"
+  },
+  {
+    "Label": "furniture-other",
+    "ID": 122,
+    "Color": "#8000d1"
+  },
+  {
+    "Label": "grass",
+    "ID": 123,
+    "Color": "#1dc331"
+  },
+  {
+    "Label": "gravel",
+    "ID": 124,
+    "Color": "#bf3883"
+  },
+  {
+    "Label": "ground-other",
+    "ID": 125,
+    "Color": "#f4ffd4"
+  },
+  {
+    "Label": "hill",
+    "ID": 126,
+    "Color": "#00d3ff"
+  },
+  {
+    "Label": "house",
+    "ID": 127,
+    "Color": "#6900f7"
+  },
+  {
+    "Label": "leaves",
+    "ID": 128,
+    "Color": "#9cbad1"
+  },
+  {
+    "Label": "light",
+    "ID": 129,
+    "Color": "#79d8aa"
+  },
+  {
+    "Label": "mat",
+    "ID": 130,
+    "Color": "#69565d"
+  },
+  {
+    "Label": "metal",
+    "ID": 131,
+    "Color": "#006905"
+  },
+  {
+    "Label": "mirror-stuff",
+    "ID": 132,
+    "Color": "#36369c"
+  },
+  {
+    "Label": "moss",
+    "ID": 133,
+    "Color": "#018246"
+  },
+  {
+    "Label": "mountain",
+    "ID": 134,
+    "Color": "#3c3732"
+  },
+  {
+    "Label": "mud",
+    "ID": 135,
+    "Color": "#07a5ef"
+  },
+  {
+    "Label": "napkin",
+    "ID": 136,
+    "Color": "#ff802f"
+  },
+  {
+    "Label": "net",
+    "ID": 137,
+    "Color": "#a754b8"
+  },
+  {
+    "Label": "paper",
+    "ID": 138,
+    "Color": "#675982"
+  },
+  {
+    "Label": "pavement",
+    "ID": 139,
+    "Color": "#72ffff"
+  },
+  {
+    "Label": "pillow",
+    "ID": 140,
+    "Color": "#d88701"
+  },
+  {
+    "Label": "plant-other",
+    "ID": 141,
+    "Color": "#bad3ff"
+  },
+  {
+    "Label": "plastic",
+    "ID": 142,
+    "Color": "#8e362f"
+  },
+  {
+    "Label": "platform",
+    "ID": 143,
+    "Color": "#a7a080"
+  },
+  {
+    "Label": "playingfield",
+    "ID": 144,
+    "Color": "#007ce2"
+  },
+  {
+    "Label": "railing",
+    "ID": 145,
+    "Color": "#8e7e8e"
+  },
+  {
+    "Label": "railroad",
+    "ID": 146,
+    "Color": "#994487"
+  },
+  {
+    "Label": "river",
+    "ID": 147,
+    "Color": "#003996"
+  },
+  {
+    "Label": "road",
+    "ID": 148,
+    "Color": "#aeaac8"
+  },
+  {
+    "Label": "rock",
+    "ID": 149,
+    "Color": "#a06062"
+  },
+  {
+    "Label": "roof",
+    "ID": 150,
+    "Color": "#4b3a77"
+  },
+  {
+    "Label": "rug",
+    "ID": 151,
+    "Color": "#6b8282"
+  },
+  {
+    "Label": "salad",
+    "ID": 152,
+    "Color": "#f0dde6"
+  },
+  {
+    "Label": "sand",
+    "ID": 153,
+    "Color": "#ffbad3"
+  },
+  {
+    "Label": "sea",
+    "ID": 154,
+    "Color": "#363ea7"
+  },
+  {
+    "Label": "shelf",
+    "ID": 155,
+    "Color": "#b3ffa8"
+  },
+  {
+    "Label": "sky-other",
+    "ID": 156,
+    "Color": "#5fdbff"
+  },
+  {
+    "Label": "skyscraper",
+    "ID": 157,
+    "Color": "#d6526e"
+  },
+  {
+    "Label": "snow",
+    "ID": 158,
+    "Color": "#959efd"
+  },
+  {
+    "Label": "solid-other",
+    "ID": 159,
+    "Color": "#7c7e00"
+  },
+  {
+    "Label": "stairs",
+    "ID": 160,
+    "Color": "#759eb8"
+  },
+  {
+    "Label": "stone",
+    "ID": 161,
+    "Color": "#db877e"
+  },
+  {
+    "Label": "straw",
+    "ID": 162,
+    "Color": "#111318"
+  },
+  {
+    "Label": "structural-other",
+    "ID": 163,
+    "Color": "#d482d4"
+  },
+  {
+    "Label": "table",
+    "ID": 164,
+    "Color": "#9e00bf"
+  },
+  {
+    "Label": "tent",
+    "ID": 165,
+    "Color": "#dbefff"
+  },
+  {
+    "Label": "textile-other",
+    "ID": 166,
+    "Color": "#8eaa9a"
+  },
+  {
+    "Label": "towel",
+    "ID": 167,
+    "Color": "#706442"
+  },
+  {
+    "Label": "tree",
+    "ID": 168,
+    "Color": "#8c682f"
+  },
+  {
+    "Label": "vegetable",
+    "ID": 169,
+    "Color": "#084d5e"
+  },
+  {
+    "Label": "wall-brick",
+    "ID": 170,
+    "Color": "#9cb844"
+  },
+  {
+    "Label": "wall-concrete",
+    "ID": 171,
+    "Color": "#d8ddd4"
+  },
+  {
+    "Label": "wall-other",
+    "ID": 172,
+    "Color": "#caff6b"
+  },
+  {
+    "Label": "wall-panel",
+    "ID": 173,
+    "Color": "#b364eb"
+  },
+  {
+    "Label": "wall-stone",
+    "ID": 174,
+    "Color": "#465d33"
+  },
+  {
+    "Label": "wall-tile",
+    "ID": 175,
+    "Color": "#009e7c"
+  },
+  {
+    "Label": "wall-wood",
+    "ID": 176,
+    "Color": "#c14100"
+  },
+  {
+    "Label": "water-other",
+    "ID": 177,
+    "Color": "#4fbcba"
+  },
+  {
+    "Label": "waterdrops",
+    "ID": 178,
+    "Color": "#d88ab1"
+  },
+  {
+    "Label": "window-blind",
+    "ID": 179,
+    "Color": "#5b72b5"
+  },
+  {
+    "Label": "window-other",
+    "ID": 180,
+    "Color": "#4b4101"
+  },
+  {
+    "Label": "wood",
+    "ID": 181,
+    "Color": "#95825d"
+  }
+]

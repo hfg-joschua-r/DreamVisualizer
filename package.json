@@ -12,6 +12,7 @@
     "core-js": "^3.6.5",
     "vue": "^3.0.0",
     "vue-drawing-canvas": "^1.0.10",
+    "vue-easy-spinner": "^0.1.0",
     "vue3-slider": "^1.6.9"
   },
   "devDependencies": {
