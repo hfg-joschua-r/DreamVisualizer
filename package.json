@@ -14,10 +14,16 @@
     "roboto-fontface": "*",
     "vue": "^3.0.0",
     "vue-drawing-canvas": "^1.0.10",
+<<<<<<< HEAD
     "vue-easy-spinner": "^0.1.0",
     "vue3-slider": "^1.6.9",
     "vuetify": "^3.0.0-beta.0",
     "webfontloader": "^1.0.0"
+=======
+    "vue-select-3": "^1.0.1",
+    "vue-simple-search-dropdown": "^1.0.1",
+    "vue3-slider": "^1.6.9"
+>>>>>>> 5d3b24e38e5fe6501adfb414ae1df0bedf832ca0
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.5.12",
