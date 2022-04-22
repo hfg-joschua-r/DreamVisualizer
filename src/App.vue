@@ -118,7 +118,8 @@ Line-Weight:
 
 <script>
 import VueDrawingCanvas from "vue-drawing-canvas";
-import slider from "vue3-slider"
+import slider from "vue3-slider";
+import axios from 'axios';
 export default {
   name: "App",
   components: {
@@ -187,6 +188,13 @@ export default {
       this.y = coordinates.y;
     },
     getNewRunwayImage(){
+       axios.post(`http://localhost:8000/`, {
+        body: this.image
+      })
+      .then(response => {})
+      .catch(e => {
+        this.errors.push(e)
+      })
       console.log("getting new image from runway...");
       
     }
