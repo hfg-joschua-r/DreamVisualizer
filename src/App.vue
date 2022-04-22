@@ -19,19 +19,9 @@
           }"
           :lock="disabled"
           @mousemove="getCoordinate($event)"
+          @mouseup="getNewRunwayImage"
         />
-        <p>
-          x-axis: <strong>{{ x }}</strong>, y-axis: <strong>{{ y }}</strong>
-        </p>
         <div class="button-container">
-          <button type="button" @click.prevent="disabled = !disabled">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-lock" viewBox="0 0 16 16">
-              <path v-if="!disabled" d="M11 1a2 2 0 0 0-2 2v4a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V9a2 2 0 0 1 2-2h5V3a3 3 0 0 1 6 0v4a.5.5 0 0 1-1 0V3a2 2 0 0 0-2-2zM3 8a1 1 0 0 0-1 1v5a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V9a1 1 0 0 0-1-1H3z"/>
-              <path v-else d="M8 1a2 2 0 0 1 2 2v4H6V3a2 2 0 0 1 2-2zm3 6V3a3 3 0 0 0-6 0v4a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2zM5 8h6a1 1 0 0 1 1 1v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1z"/>
-            </svg>
-            <span v-if="!disabled">Unlock</span>
-            <span v-else>Lock</span>
-          </button>
           <button type="button" @click.prevent="$refs.VueCanvasDrawing.undo()">
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-counterclockwise" viewBox="0 0 16 16">
               <path fill-rule="evenodd" d="M8 3a5 5 0 1 1-4.546 2.914.5.5 0 0 0-.908-.417A6 6 0 1 0 8 2v1z"/>
@@ -111,26 +101,6 @@
             </span>
           </button>
         </div>
-        <div class="button-container">
-          <div style="margin-right: 30px;">
-            <p style="margin-bottom: 0">
-              Background Color:
-            </p>
-            <input type="color" v-model="backgroundColor">
-          </div>
-          <div>
-            <p style="margin-bottom: 0">
-              Upload Background Image:
-            </p>
-            <input type="file" @change="setImage($event)">
-          </div>
-          <div>
-            <p style="margin-bottom: 0">
-              Upload Watermark Image:
-            </p>
-            <input type="file" @change="setWatermarkImage($event)">
-          </div>
-        </div>
       </div>
       
       <div class="output">
@@ -156,9 +126,9 @@ export default {
       disabled: false,
       fillShape: false,
       line: 5,
-      color: '#000000',
+      color: '#FFFFF',
       strokeType: 'dash',
-      backgroundColor: '#FFFFFF',
+      backgroundColor: '#000000',
       backgroundImage: null,
       watermark: null
       // watermark: {
@@ -207,6 +177,9 @@ export default {
       let coordinates = this.$refs.VueCanvasDrawing.getCoordinates(event);
       this.x = coordinates.x;
       this.y = coordinates.y;
+    },
+    getNewRunwayImage(){
+      console.log("getting new image from runway...");
     }
   }
 };
