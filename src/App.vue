@@ -191,7 +191,8 @@ export default {
        axios.post(`http://localhost:8000/`, {
         body: this.image
       })
-      .then(response => {})
+      .then(response => {console.log(response)})
+
       .catch(e => {
         this.errors.push(e)
       })
