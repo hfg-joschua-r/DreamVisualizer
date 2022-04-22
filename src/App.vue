@@ -19,9 +19,15 @@
           }"
           :lock="disabled"
           @mousemove="getCoordinate($event)"
-          @mouseup="getNewRunwayImage"
+          @mouseup="getNewRunwayImage()"
         />
+        
+
+
         <div class="button-container">
+Line-Weight:
+        <slider v-model="line" max="40" color="#FB278D" track-color="#FEFEFE" tooltip="true"/>
+
           <button type="button" @click.prevent="$refs.VueCanvasDrawing.undo()">
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-counterclockwise" viewBox="0 0 16 16">
               <path fill-rule="evenodd" d="M8 3a5 5 0 1 1-4.546 2.914.5.5 0 0 0-.908-.417A6 6 0 1 0 8 2v1z"/>
@@ -65,9 +71,9 @@
               Draw
             </span>
           </button>
-          <select v-model="line">
-            <option v-for="n in 25" :key="'option-' + n" :value="n">{{ n }}</option>
-          </select>
+          
+
+          
           <input type="color" v-model="color">
           <select v-model="strokeType">
             <option value="dash">
@@ -112,10 +118,12 @@
 
 <script>
 import VueDrawingCanvas from "vue-drawing-canvas";
+import slider from "vue3-slider"
 export default {
   name: "App",
   components: {
     VueDrawingCanvas,
+    slider
   },
   data() {
     return {
@@ -126,7 +134,7 @@ export default {
       disabled: false,
       fillShape: false,
       line: 5,
-      color: '#FFFFF',
+      color: '#ffffff',
       strokeType: 'dash',
       backgroundColor: '#000000',
       backgroundImage: null,
