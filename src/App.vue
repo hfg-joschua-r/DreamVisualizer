@@ -10,7 +10,6 @@
           :eraser="eraser"
           :lineWidth="line"
           :color="color"
-          :lineJoin="miter"
           :background-color="backgroundColor"
           :background-image="backgroundImage"
           :watermark="watermark"
@@ -22,7 +21,6 @@
           @mousemove="getCoordinate($event)"
           @mouseup="getNewRunwayImage()"
         />
-<<<<<<< HEAD
         
 
 
@@ -30,11 +28,6 @@
 Line-Weight:
         <slider v-model="line" max="40" color="#FB278D" track-color="#FEFEFE" tooltip="true"/>
 
-=======
-      
-        <div class="button-container">
-          
->>>>>>> d488552557b30eaee27f0c01af8d2229813a7ccc
           <button type="button" @click.prevent="$refs.VueCanvasDrawing.undo()">
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-counterclockwise" viewBox="0 0 16 16">
               <path fill-rule="evenodd" d="M8 3a5 5 0 1 1-4.546 2.914.5.5 0 0 0-.908-.417A6 6 0 1 0 8 2v1z"/>
@@ -49,7 +42,13 @@ Line-Weight:
             </svg>
             Redo
           </button>
-          
+          <button type="button" @click.prevent="$refs.VueCanvasDrawing.redraw()">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-repeat" viewBox="0 0 16 16">
+              <path d="M11.534 7h3.932a.25.25 0 0 1 .192.41l-1.966 2.36a.25.25 0 0 1-.384 0l-1.966-2.36a.25.25 0 0 1 .192-.41zm-11 2h3.932a.25.25 0 0 0 .192-.41L2.692 6.23a.25.25 0 0 0-.384 0L.342 8.59A.25.25 0 0 0 .534 9z"/>
+              <path fill-rule="evenodd" d="M8 3c-1.552 0-2.94.707-3.857 1.818a.5.5 0 1 1-.771-.636A6.002 6.002 0 0 1 13.917 7H12.9A5.002 5.002 0 0 0 8 3zM3.1 9a5.002 5.002 0 0 0 8.757 2.182.5.5 0 1 1 .771.636A6.002 6.002 0 0 1 2.083 9H3.1z"/>
+            </svg>
+            Refresh
+          </button>
           <button type="button" @click.prevent="$refs.VueCanvasDrawing.reset()">
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-earmark" viewBox="0 0 16 16">
               <path d="M14 4.5V14a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h5.5L14 4.5zm-3 0A1.5 1.5 0 0 1 9.5 3V1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V4.5h-2z"/>
@@ -76,7 +75,6 @@ Line-Weight:
 
           
           <input type="color" v-model="color">
-<<<<<<< HEAD
           <select v-model="strokeType">
             <option value="dash">
               Dash
@@ -109,24 +107,13 @@ Line-Weight:
             </span>
           </button>
         </div>
-=======
-          
-        </div>
-       
->>>>>>> d488552557b30eaee27f0c01af8d2229813a7ccc
       </div>
       
       <div class="output">
         <p>Output:</p>
         <img :src="image" style="border: solid 1px #000000">
-        <p>
-          {{image}}
-        </p>
       </div>
-      <p>
-      </p>
     </div>
-
 </template>
 
 <script>
@@ -201,6 +188,7 @@ export default {
     },
     getNewRunwayImage(){
       console.log("getting new image from runway...");
+      
     }
   }
 };
