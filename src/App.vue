@@ -189,7 +189,7 @@ export default {
     },
     getNewRunwayImage(){
        axios.post(`http://localhost:8000/`, {
-        body: this.image
+        semantic_map: this.image
       })
       .then(response => {console.log(response)})
 
