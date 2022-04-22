@@ -132,13 +132,21 @@
       <img :src="generatedImage" style="border: solid 1px #000000" />
     </div>
   </div>
+  <!--- Color Picker -->
+  <div class="container">
+  <div class="color-picker" v-for="c in colors" :key="c.Label">
+    <div class="color-picker-box" :style="{ backgroundColor: c.Color }" @click="color=c.Color">
+        <p>{{ c.Label }}</p>
+    </div>
+  </div>
+</div>
 </template>
 
 <script>
 import VueDrawingCanvas from "vue-drawing-canvas";
 import slider from "vue3-slider";
 import axios from "axios";
-import colors from "./assets/colors.json"
+import colorsJson from "./assets/colors.json";
 
 export default {
   name: "App",
@@ -161,8 +169,8 @@ export default {
       backgroundColor: "#000",
       backgroundImage: null,
       watermark: null,
-      colors,
       loadingImg: false,
+      colors: colorsJson,
     };
   },
   methods: {
@@ -212,8 +220,8 @@ export default {
 </script>
 
 <style scoped>
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,700&display=swap");
-body {
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+template {
   font-family: "Roboto", sans-serif;
 }
 .flex-row {
@@ -227,5 +235,17 @@ body {
 .button-container > * {
   margin-top: 15px;
   margin-right: 10px;
+}
+.container {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    text-align: center;
+    line-height: 50px; 
+}
+.color-picker-box {
+    width: 100px;
+    height: 50px;
+    margin: 5px;
 }
 </style>
