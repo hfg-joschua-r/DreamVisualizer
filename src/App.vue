@@ -29,59 +29,6 @@
 
   <!-- End Navbar -->
 
-  <!-- SideNav -->
-  <!--
-<div class="container-fluid" style="position: absolute;">
-
-    <div class="d-flex flex-column flex-shrink-0 bg-light left" style="width: 4.5rem;">
-    <a href="/" class="d-block p-3 link-dark text-decoration-none" title="" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-original-title="Icon-only">
-      <svg class="bi" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
-      <span class="visually-hidden">Icon-only</span>
-    </a>
-    <ul class="nav nav-pills nav-flush flex-column mb-auto text-center">
-      <li class="nav-item">
-        <a href="#" class="nav-link active py-3 border-bottom" aria-current="page" title="" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-original-title="Home">
-          <svg class="bi" width="24" height="24" role="img" aria-label="Home"><use xlink:href="#home"></use></svg>
-        </a>
-      </li>
-      <li>
-        <a href="#" class="nav-link py-3 border-bottom" title="" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-original-title="Dashboard">
-          <svg class="bi" width="24" height="24" role="img" aria-label="Dashboard"><use xlink:href="#speedometer2"></use></svg>
-        </a>
-      </li>
-      <li>
-        <a href="#" class="nav-link py-3 border-bottom" title="" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-original-title="Orders">
-          <svg class="bi" width="24" height="24" role="img" aria-label="Orders"><use xlink:href="#table"></use></svg>
-        </a>
-      </li>
-      <li>
-        <a href="#" class="nav-link py-3 border-bottom" title="" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-original-title="Products">
-          <svg class="bi" width="24" height="24" role="img" aria-label="Products"><use xlink:href="#grid"></use></svg>
-        </a>
-      </li>
-      <li>
-        <a href="#" class="nav-link py-3 border-bottom" title="" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-original-title="Customers">
-          <svg class="bi" width="24" height="24" role="img" aria-label="Customers"><use xlink:href="#people-circle"></use></svg>
-        </a>
-      </li>
-    </ul>
-    <div class="dropdown border-top">
-      <a href="#" class="d-flex align-items-center justify-content-center p-3 link-dark text-decoration-none dropdown-toggle" id="dropdownUser3" data-bs-toggle="dropdown" aria-expanded="false">
-        <img src="https://github.com/mdo.png" alt="mdo" class="rounded-circle" width="24" height="24">
-      </a>
-      <ul class="dropdown-menu text-small shadow" aria-labelledby="dropdownUser3">
-        <li><a class="dropdown-item" href="#">New project...</a></li>
-        <li><a class="dropdown-item" href="#">Settings</a></li>
-        <li><a class="dropdown-item" href="#">Profile</a></li>
-        <li><hr class="dropdown-divider"></li>
-        <li><a class="dropdown-item" href="#">Sign out</a></li>
-      </ul>
-    </div>
-    </div>
-    </div>
--->
-  <!-- End SideNav -->
-
   <!-- Content Container -->
   <div
     class="container"
@@ -95,12 +42,10 @@
       text-align: center;
     "
   >
-    <!-- Content -->
-
     <!--1. Row-->
     <div class="row">
       <div class="col">
-        <p>Canvas:</p>
+        <h4>Canvas:</h4>
         <vue-drawing-canvas
           ref="VueCanvasDrawing"
           background-color="#000"
@@ -118,138 +63,155 @@
           @mousemove="getCoordinate($event)"
           @mouseup="getNewRunwayImage()"
         />
+
+        <!-- Buttons here -->
+        <div class="button-container" style="justify-content: right">
+          <button
+            type="button"
+            class="btn btn-dark"
+            @click.prevent="$refs.VueCanvasDrawing.undo()"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-arrow-counterclockwise"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M8 3a5 5 0 1 1-4.546 2.914.5.5 0 0 0-.908-.417A6 6 0 1 0 8 2v1z"
+              />
+              <path
+                d="M8 4.466V.534a.25.25 0 0 0-.41-.192L5.23 2.308a.25.25 0 0 0 0 .384l2.36 1.966A.25.25 0 0 0 8 4.466z"
+              />
+            </svg>
+            Undo
+          </button>
+          <button
+            type="button"
+            class="btn btn-dark"
+            @click.prevent="$refs.VueCanvasDrawing.redo()"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-arrow-clockwise"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M8 3a5 5 0 1 0 4.546 2.914.5.5 0 0 1 .908-.417A6 6 0 1 1 8 2v1z"
+              />
+              <path
+                d="M8 4.466V.534a.25.25 0 0 1 .41-.192l2.36 1.966c.12.1.12.284 0 .384L8.41 4.658A.25.25 0 0 1 8 4.466z"
+              />
+            </svg>
+            Redo
+          </button>
+
+          <button
+            type="button"
+            class="btn btn-dark"
+            @click.prevent="$refs.VueCanvasDrawing.reset()"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-file-earmark"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M14 4.5V14a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h5.5L14 4.5zm-3 0A1.5 1.5 0 0 1 9.5 3V1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V4.5h-2z"
+              />
+            </svg>
+            Reset
+          </button>
+        </div>
+        <div style="text-align: left; margin-left: 17px">
+          Line-Weight:
+          <slider
+            v-model="line"
+            max="40"
+            color="#35ffb8 "
+            track-color="#00009e"
+            tooltip="true"
+          />
+        </div>
       </div>
       <div class="col">
         <div class="output">
-          <p v-if="!loadingImg">Output:</p>
-          <p v-if="loadingImg">Loading...</p>
-          <div style="width: 400px;height:400px; background-color:#EDEDED;"></div>
-          <img :src="generatedImage" style="border: solid 1px #000000" />
-          <button @click="downloadOutput()">Download</button>
+          <h4 v-if="!loadingImg">Output:</h4>
+          <h4 v-if="loadingImg">Loading...</h4>
+          <div
+            style="width: 600px; height: 400px; background-color: #ededed"
+            v-if="!imageAvailable"
+          ></div>
+          <img v-if="imageAvailable"
+          :src="generatedImage" style="border: solid 1px #000000" />
+          <div class="button-container">
+            <button
+              class="btn btn-dark"
+              style="display: block; margin-left: auto; margin-right: 0px"
+              @click="downloadOutput()"
+            >
+              Download
+            </button>
+          </div>
         </div>
       </div>
     </div>
 
     <!--2. Row-->
-    <div class="row">
+
+    <div class="row" style="width: 100%; margin-left: 6px">
       <div class="col">
-        
-          <div class="button-container">
-            Line-Weight:
-            <slider
-              v-model="line"
-              max="40"
-              color="#35ffb8 "
-              track-color="#00009e"
-              tooltip="true"
-            />
-
-            <button
-              type="button"
-              class="btn btn-dark"
-              @click.prevent="$refs.VueCanvasDrawing.undo()"
-            >
+        <div class="button-container">
+          <button
+            type="button"
+            class="btn btn-primary"
+            @click.prevent="eraser = !eraser"
+          >
+            <span v-if="eraser">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="16"
                 height="16"
                 fill="currentColor"
-                class="bi bi-arrow-counterclockwise"
+                class="bi bi-eraser"
                 viewBox="0 0 16 16"
               >
                 <path
-                  fill-rule="evenodd"
-                  d="M8 3a5 5 0 1 1-4.546 2.914.5.5 0 0 0-.908-.417A6 6 0 1 0 8 2v1z"
-                />
-                <path
-                  d="M8 4.466V.534a.25.25 0 0 0-.41-.192L5.23 2.308a.25.25 0 0 0 0 .384l2.36 1.966A.25.25 0 0 0 8 4.466z"
+                  d="M8.086 2.207a2 2 0 0 1 2.828 0l3.879 3.879a2 2 0 0 1 0 2.828l-5.5 5.5A2 2 0 0 1 7.879 15H5.12a2 2 0 0 1-1.414-.586l-2.5-2.5a2 2 0 0 1 0-2.828l6.879-6.879zm2.121.707a1 1 0 0 0-1.414 0L4.16 7.547l5.293 5.293 4.633-4.633a1 1 0 0 0 0-1.414l-3.879-3.879zM8.746 13.547 3.453 8.254 1.914 9.793a1 1 0 0 0 0 1.414l2.5 2.5a1 1 0 0 0 .707.293H7.88a1 1 0 0 0 .707-.293l.16-.16z"
                 />
               </svg>
-              Undo
-            </button>
-            <button
-              type="button"
-              class="btn btn-dark"
-              @click.prevent="$refs.VueCanvasDrawing.redo()"
-            >
+              Eraser
+            </span>
+            <span v-else>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="16"
                 height="16"
                 fill="currentColor"
-                class="bi bi-arrow-clockwise"
+                class="bi bi-pencil"
                 viewBox="0 0 16 16"
               >
                 <path
-                  fill-rule="evenodd"
-                  d="M8 3a5 5 0 1 0 4.546 2.914.5.5 0 0 1 .908-.417A6 6 0 1 1 8 2v1z"
-                />
-                <path
-                  d="M8 4.466V.534a.25.25 0 0 1 .41-.192l2.36 1.966c.12.1.12.284 0 .384L8.41 4.658A.25.25 0 0 1 8 4.466z"
+                  d="M12.146.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-10 10a.5.5 0 0 1-.168.11l-5 2a.5.5 0 0 1-.65-.65l2-5a.5.5 0 0 1 .11-.168l10-10zM11.207 2.5 13.5 4.793 14.793 3.5 12.5 1.207 11.207 2.5zm1.586 3L10.5 3.207 4 9.707V10h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.293l6.5-6.5zm-9.761 5.175-.106.106-1.528 3.821 3.821-1.528.106-.106A.5.5 0 0 1 5 12.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.468-.325z"
                 />
               </svg>
-              Redo
-            </button>
+              Draw
+            </span>
+          </button>
 
-            <button
-              type="button"
-              class="btn btn-dark"
-              @click.prevent="$refs.VueCanvasDrawing.reset()"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="16"
-                height="16"
-                fill="currentColor"
-                class="bi bi-file-earmark"
-                viewBox="0 0 16 16"
-              >
-                <path
-                  d="M14 4.5V14a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h5.5L14 4.5zm-3 0A1.5 1.5 0 0 1 9.5 3V1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V4.5h-2z"
-                />
-              </svg>
-              Reset
-            </button>
-          </div>
-          <div class="button-container">
-            <button type="button" class="btn btn-primary" @click.prevent="eraser = !eraser">
-              <span v-if="eraser">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="16"
-                  height="16"
-                  fill="currentColor"
-                  class="bi bi-eraser"
-                  viewBox="0 0 16 16"
-                >
-                  <path
-                    d="M8.086 2.207a2 2 0 0 1 2.828 0l3.879 3.879a2 2 0 0 1 0 2.828l-5.5 5.5A2 2 0 0 1 7.879 15H5.12a2 2 0 0 1-1.414-.586l-2.5-2.5a2 2 0 0 1 0-2.828l6.879-6.879zm2.121.707a1 1 0 0 0-1.414 0L4.16 7.547l5.293 5.293 4.633-4.633a1 1 0 0 0 0-1.414l-3.879-3.879zM8.746 13.547 3.453 8.254 1.914 9.793a1 1 0 0 0 0 1.414l2.5 2.5a1 1 0 0 0 .707.293H7.88a1 1 0 0 0 .707-.293l.16-.16z"
-                  />
-                </svg>
-                Eraser
-              </span>
-              <span v-else>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="16"
-                  height="16"
-                  fill="currentColor"
-                  class="bi bi-pencil"
-                  viewBox="0 0 16 16"
-                >
-                  <path
-                    d="M12.146.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-10 10a.5.5 0 0 1-.168.11l-5 2a.5.5 0 0 1-.65-.65l2-5a.5.5 0 0 1 .11-.168l10-10zM11.207 2.5 13.5 4.793 14.793 3.5 12.5 1.207 11.207 2.5zm1.586 3L10.5 3.207 4 9.707V10h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.293l6.5-6.5zm-9.761 5.175-.106.106-1.528 3.821 3.821-1.528.106-.106A.5.5 0 0 1 5 12.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.468-.325z"
-                  />
-                </svg>
-                Draw
-              </span>
-            </button>
-
-            <input type="color" v-model="color" />
-          </div>
-        
+          <input style="height:38px; width:83px" type="color" v-model="color" />
+        </div>
       </div>
-      <div class="col"></div>
     </div>
 
     <!--- Color Picker -->
@@ -270,7 +232,7 @@
   <!-- Footer -->
   <footer class="footer mt-auto py-3 bg-light">
     <div class="container">
-      <span class="text-muted">Inhalt vom Footer</span>
+      <span class="text-muted">Machine Learning - Smart Home Projekt</span>
     </div>
   </footer>
   <!-- End Footer -->
@@ -293,6 +255,7 @@ export default {
       x: 0,
       y: 0,
       image: "",
+      imageAvailable: false,
       generatedImage: "",
       eraser: false,
       disabled: false,
@@ -342,6 +305,7 @@ export default {
           console.log(response);
           this.generatedImage = response.data.output;
           this.loadingImg = false;
+          this.imageAvailable = true;
         })
 
         .catch((e) => {
@@ -374,6 +338,7 @@ template {
 }
 .button-container > * {
   margin-top: 15px;
+  margin-bottom: 15px;
   margin-right: 10px;
 }
 .container {
@@ -392,7 +357,15 @@ p {
   font-size: 16px;
   font-weight: bold;
   font-family: "Roboto", sans-serif;
+  text-align: center;
 }
+h4 {
+  font-size: 18px;
+  font-weight: bold;
+  font-family: "Roboto", sans-serif;
+  text-align: left;
+}
+
 .fs-mini {
   font-size: 8px;
 }
