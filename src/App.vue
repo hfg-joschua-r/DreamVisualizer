@@ -68,7 +68,7 @@
           </svg>
           Redo
         </button>
-        
+
         <button type="button" @click.prevent="$refs.VueCanvasDrawing.reset()">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -119,27 +119,29 @@
           </span>
         </button>
 
-        
-        
         <input type="color" v-model="color" />
       </div>
     </div>
-    
 
     <div class="output">
       <p v-if="!loadingImg">Output:</p>
       <p v-if="loadingImg">Loading...</p>
       <img :src="generatedImage" style="border: solid 1px #000000" />
+      <button @click="downloadOutput()">Download</button>
     </div>
   </div>
   <!--- Color Picker -->
   <div class="container">
-  <div class="color-picker" v-for="c in colors" :key="c.Label">
-    <div class="color-picker-box" :style="{ backgroundColor: c.Color }" @click="color=c.Color">
+    <div class="color-picker" v-for="c in colors" :key="c.Label">
+      <div
+        class="color-picker-box"
+        :style="{ backgroundColor: c.Color }"
+        @click="color = c.Color"
+      >
         <p>{{ c.Label }}</p>
+      </div>
     </div>
   </div>
-</div>
 </template>
 
 <script>
@@ -215,12 +217,18 @@ export default {
         });
       console.log("getting new image from runway...");
     },
+    downloadOutput(){
+      let link = document.createElement('a');
+      link.download = 'output.png';
+      link.href = this.generatedImage;
+      link.click();
+    }
   },
 };
 </script>
 
 <style scoped>
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 template {
   font-family: "Roboto", sans-serif;
 }
@@ -237,15 +245,20 @@ template {
   margin-right: 10px;
 }
 .container {
-    display: flex;
-    width: 100%;
-    flex-wrap: wrap;
-    text-align: center;
-    line-height: 50px; 
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  text-align: center;
+  line-height: 50px;
 }
 .color-picker-box {
-    width: 100px;
-    height: 50px;
-    margin: 5px;
+  width: 100px;
+  height: 50px;
+  margin: 5px;
+}
+p {
+  font-size: 16px;
+  font-weight: bold;
+  font-family: "Roboto", sans-serif;
 }
 </style>
