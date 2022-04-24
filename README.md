@@ -28,7 +28,7 @@ Nun zurück auf das Frontend gehen und seinen Traum malen wie im oben gezeigten 
 
 
 
-## Alternative  Frontend boot
+## Alternativer Frontend boot
 
 1. Download das Repo
 2. das Repo Öffnen in einer Entwickleroberfläche 
