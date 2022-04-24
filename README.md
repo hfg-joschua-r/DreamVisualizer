@@ -17,8 +17,8 @@ Anschließend Runway starten.
 
 Runway im Browser funktioniert theoretisch auch, benötigt aber noch ein bisschen mehr Entwicklungszeit
 ```
-1. den reiter auf MyLab stellen. 
-2. bei Models und alle Models das Modell `Spade COCO ` suchen. 
+1. den Productsreiter  auf MyLab stellen. 
+2. bei `Models` und `all Models` das Modell `Spade COCO ` suchen. 
 3. Run Remotly 
 4. Überprüfen ob das Model auf Port `http://localhost:8000` läuft
 
