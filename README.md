@@ -1,6 +1,7 @@
 # Dream Visualizer
 [![Video](https://img.youtube.com/vi/Dsj0hKQweoc/0.jpg)](https://www.youtube.com/watch?v=Dsj0hKQweoc)
 
+[Dokumentation](DreamVisualizer.pdf)
 ## Project setup
 ```
 npm install
