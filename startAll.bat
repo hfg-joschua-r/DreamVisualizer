@@ -10,7 +10,7 @@ docker image rm jannes/to_dramvisualizer
 
 
 cd ..
-cd dramvisualizer_dramvisualizer
+cd dramvisualizer
 docker build . -t jannes/to_dramvisualizer
 docker run --rm -d  -p 8080:80/tcp --name dramvisualizer jannes/dramvisualizer:latest 
 

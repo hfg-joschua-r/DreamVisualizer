@@ -17,7 +17,7 @@ docker image rm jannes/to_dramvisualizer
 
 
 cd ..
-cd DreamVisualizer/dreamvisualizer ||return
+cd dreamvisualizer ||return
 docker build . -t jannes/to_dreamvisualizer
 docker run --rm -d  -p 8080:80/tcp --name dreamvisualizer jannes/dreamvisualizer:latest
 
