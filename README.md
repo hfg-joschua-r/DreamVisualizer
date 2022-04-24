@@ -24,25 +24,22 @@ Runway im Browser funktioniert theoretisch auch, benötigt aber noch ein bissche
 
 Nun zurück auf das Frontend gehen und seinen Traum malen wie im oben gezeigten Video 
 
-## Project setup
+
+
+
+
+## Alternative  Frontend boot
+
+1. Download das Repo
+2. das Repo Öffnen in einer Entwickleroberfläche 
+3. Im Terminal eingeben 
 ```
 npm install
 ```
-
-### Compiles and hot-reloads for development
+4. Um das Frontend zu starten im Terminal eingeben
 ```
 npm run serve
 ```
+5.  `http://localhost:8080` im Browser eingeben
 
-### Compiles and minifies for production
-```
-npm run build
-```
 
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
