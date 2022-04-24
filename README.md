@@ -1,6 +1,4 @@
 # Dream Visualizer
-https://youtu.be/Dsj0hKQweoc
-
 [![Video](https://img.youtube.com/vi/Dsj0hKQweoc/0.jpg)](https://www.youtube.com/watch?v=Dsj0hKQweoc)
 
 ## Project setup
