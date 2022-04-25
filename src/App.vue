@@ -151,7 +151,8 @@
           <div
             style="width: 600px; height: 400px; background-color: #ededed"
             v-if="!imageAvailable"
-          ></div>
+          >
+          </div>
           <img v-if="imageAvailable"
           :src="generatedImage" style="border: solid 1px #000000" />
           <div class="button-container">
@@ -208,7 +209,6 @@
               Draw
             </span>
           </button>
-
           <input style="height:38px; width:83px" type="color" v-model="color" />
         </div>
       </div>
